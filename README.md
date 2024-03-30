@@ -27,5 +27,6 @@ curl -X 'POST' 'http://127.0.0.1:8000/translate/' -H 'accept: application/json' 
 ```
 #### Benchmark
 ```
+cd RomajiKirijiAPI
 wrk -t13 -c1000 -d10s -s post.lua http://127.0.0.1:8000/translate/
 ```
